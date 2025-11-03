@@ -1,0 +1,18 @@
+@import "../utils/variables";
+%title{
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+}
+%sub-title{
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;   
+}
+%btn{
+    background-color: $decorative-color;
+    border-radius: 4px;
+    border: none;
+    color: $primary-color; 
+}

@@ -1,0 +1,181 @@
+@import "../utils/variables";
+@import "../utils/placeholders";
+@import "../utils/mixin";
+
+.footer{
+    background-color: #2F303A;
+    padding-top: 64px;
+    padding-bottom: 60px;
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 63px;
+    }
+    &__logo{
+        color: $primary-color;
+        margin-bottom: 19px;
+    }
+    &__info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &__address{
+        font-weight: 400;
+        font-size: 14px;
+        color: $primary-color;
+        margin-bottom: 8px;
+    }
+    &__email{
+        font-weight: 400;
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.6);
+        margin-bottom: 8px;      
+    }
+    &__tel{
+        font-weight: 400;
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.6);
+    }
+    &__socials{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    &__socials-title{
+        font-weight: 700;
+        font-size: 14px;
+        color: $primary-color;
+        text-transform: uppercase;
+        margin-bottom: 0;
+    }
+    &__socials-content{
+        display: flex;
+        gap: 10px;
+    }
+    &__socials-svg{
+        fill: $primary-color;
+        z-index: 2;
+    }
+    &__socials-item{
+        width: 44px;
+        height: 44px;
+        border: none;
+        border-radius: 100px;
+        background-color: rgba(255, 255, 255, 0.1) ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        &:hover{
+            background-color: $decorative-color;
+        }
+        &:hover .team__svg{
+            fill: $primary-color;
+        }
+        &:hover::after{
+            content: "";
+            width: 100px;
+            height: 20px;
+            background: $decorative-color;
+            background: linear-gradient(0deg, rgba(33, 150, 243, 0) 0%, rgba(135, 195, 255, 1) 50%, rgba(33, 150, 243, 0) 100%);
+            position: absolute;
+            transform: rotate(-40deg);
+            animation-name: line;
+            z-index: 0;
+            transition-duration: 1s;
+            position: absolute;
+            animation-name: shine;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            right: 40px;
+        }
+    }
+    &__mailing{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    &__mailing-title{
+        font-weight: 700;
+        font-size: 14px;
+        color: $primary-color;
+        text-transform: uppercase;
+        margin-bottom: 0;
+    }
+    &__mailing-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    &__mailing-input{
+        max-width: 450px;
+        width: 95vw;
+        height: 50px;
+        display: flex;
+        background-color: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        &::placeholder{
+            color: rgba(255, 255, 255, 0.6);
+            padding-left: 16px;
+        }
+    }
+    &__mailing-btn{
+        @extend %btn;
+        width: 200px;
+        height: 50px;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 13px;
+    }
+}
+@keyframes shine {
+    0% {
+        transform: translateX(0) rotate(-40deg);
+    }
+    100% {
+        transform: translateX(100px) rotate(-40deg);
+    }
+}
+@media (min-width:567px){
+    .footer__wrapper{
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 178px;
+        align-items: baseline;
+    }
+}
+@media (min-width:1200px) {
+    .footer__wrapper{
+        flex-wrap: nowrap;
+        gap: 93px;
+    }
+    .footer__info{
+        align-items: start;
+    }
+    .footer__socials{
+        align-items: start;
+    }
+    .footer__mailing{
+        align-items: start;
+    }
+    .footer__mailing-content{
+        flex-direction: row;
+        gap: 20px;
+    }
+    .footer__mailing-input{
+        max-width: 358px;
+    }
+}

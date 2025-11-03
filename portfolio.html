@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="portfolio-page">
+    <div class="header-wrapper">
+    <header class="page-header container">
+
+        <a href="#" class="logo"><span class="logo__label">Web</span>Studio</a>
+
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">Студія</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Портфоліо</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Контакти</a></li>
+            </ul>
+        </nav>
+
+        <div class="info">
+            <div class="info__item">
+                <svg class="info__svg" width="16" height="12"><use href="symbols.svg#email"></use></svg>
+                <p class="info__email">info@devstudio.com</p>
+            </div>
+            <div class="info__item">
+                <svg class="info__svg" width="10" height="16"><use href="symbols.svg#phone"></use></svg>
+                <p class="info__tel">+38 096 111 11 11</p>
+            </div>
+        </div>
+
+        <button class="hamburger-btn" id="hamburgerBtn" onclick="openMenu()">
+            <svg width="24" height="16">
+                <use href="symbols.svg#mobile-menu"></use>
+            </svg>
+        </button>
+        
+
+    </header>
+    </div>
+    <div id="mainPage">
+    <main>
+
+        <div class="btns container">
+            
+            <button class="btns__btn">Усі</button>
+            <button class="btns__btn">Веб-сайти</button>
+            <button class="btns__btn">Додатки</button>
+            <button class="btns__btn">Дизайн</button>
+            <button class="btns__btn">Маркетинг</button>
+    
+        </div>
+
+        <ul class="grids container">
+            <li class="grids__item">
+                <div class="grids__overlay">
+                
+                <picture class="grids__img">
+                    <source srcset="img/job-desktop.png 1x, img/job-desktop@2.png 2x" media="(min-width:1024px)">
+                    <source  srcset="img/job-tablet.png 1x, img/job-tablet@2.png 2x" media="(min-width:768px)">
+                    <img srcset="img/job.png 1x, img/job@2.png 2x" alt="notebook">
+                </picture>
+
+                 <div class="grids__wrapper-text">
+                    <p class="grids__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                </div>
+
+                </div>
+
+                <h3 class="grids__title">Технокряк</h3>
+                <p class="grids__subtitle">Веб-сайт</p>
+
+
+            </li>
+            <li class="grids__item">
+                <div class="grids__overlay">
+                <picture class="grids__img">
+                    <source srcset="img/team-desktop.png 1x, img/team-desktop@2.png 2x" media="(min-width:1024px)">
+                    <source srcset="img/team-tablet.png 1x, img/team-tablet@2.png 2x" media="(min-width:768px)">
+                    <img srcset="img/team.png 1x, img/team@2.png 2x" alt="team">
+                </picture>
+    
+                <div class="grids__wrapper-text">
+                    <p class="grids__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                </div>
+
+                </div>
+
+                <h3 class="grids__title">Постер New Orlean vs Golden Star</h3>
+                <p class="grids__subtitle">Дизайн</p>
+            </li>
+            <li class="grids__item">
+                <div class="grids__overlay">
+
+                <picture class="grids__img">
+                    <source srcset="img/logo-desktop.png 1x, img/logo-desktop@2.png 2x" media="(min-width:1024px)">
+                    <source srcset="img/logo-tablet.png 1x, img/logo-tablet@2.png 2x" media="(min-width:768px)">
+                    <img srcset="img/logo.png 1x, img/logo@2.png 2x" alt="logo">
+                </picture>
+
+                <div class="grids__wrapper-text">
+                    <p class="grids__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                </div>
+
+                </div>
+
+                <h3 class="grids__title">Ресторан Seafood</h3>
+                <p class="grids__subtitle">Додаток</p>
+            </li>
+            <li class="grids__item">
+                <div class="grids__overlay">
+
+                <picture class="grids__img">
+                    <source srcset="img/headphones-desktop.png 1x, img/headphones-desktop@2.png 2x" media="(min-width:1024px)">
+                    <source srcset="img/headphones-tablet.png 1x, img/headphones-tablet@2.png 2x" media="(min-width:768px)">
+                    <img srcset="img/headphones.png 1x, img/headphones@2.png 2x" alt="headphones">
+                </picture>
+
+                <div class="grids__wrapper-text">
+                    <p class="grids__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                </div>
+
+                </div>
+                <h3 class="grids__title">Проєкт Prime</h3>
+                <p class="grids__subtitle">Маркетинг</p>
+            </li>
+            <li class="grids__item">
+                <div class="grids__overlay">
+
+                <picture class="grids__img">
+                    <source srcset="img/blocks-desktop.png 1x, img/blocks-desktop@2.png 2x" media="(min-width:1024px)">
+                    <source srcset="img/blocks-tablet.png 1x, img/blocks-tablet@2.png 2x" media="(min-width:768px)">
+                    <img srcset="img/blocks.png 1x, img/blocks@2.png 2x" alt="blocks">
+                </picture>
+
+                <div class="grids__wrapper-text">
+                    <p class="grids__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                </div>
+
+                </div>
+                <h3 class="grids__title">Проєкт Boxes</h3>
+                <p class="grids__subtitle">Додаток</p>
+            </li>
+            <li class="grids__item">
+                <div class="grids__overlay">
+
+                <picture class="grids__img">
+                    <source srcset="img/computer-desktop.png 1x, img/computer-desktop@2.png 2x" media="(min-width:1024px)">
+                    <source srcset="img/computer-tablet.png 1x, img/computer-tablet@2.png 2x" media="(min-width:768px)">
+                    <img srcset="img/computer.png 1x, img/computer@2.png 2x" alt="computer">
+                </picture>
+
+                <div class="grids__wrapper-text">
+                    <p class="grids__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                </div>
+
+                </div>
+                <h3 class="grids__title">Inspiration has no Borders</h3>
+                <p class="grids__subtitle">Веб-сайт</p>
+            </li>
+            <li class="grids__item">
+                <div class="grids__overlay">
+
+                <picture class="grids__img">
+                    <source srcset="img/magazine-desktop.png 1x, img/magazine-desktop@2.png 2x" media="(min-width:1024px)">
+                    <source srcset="img/magazine-tablet.png 1x, img/magazine-tablet@2.png 2x" media="(min-width:768px)">
+                    <img srcset="img/magazine.png 1x, img/magazine@2.png 2x" alt="magazine">
+                </picture>
+
+                <div class="grids__wrapper-text">
+                    <p class="grids__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                </div>
+
+                </div>
+                <h3 class="grids__title">Видання Limited Edition</h3>
+                <p class="grids__subtitle">Дизайн</p>
+            </li>
+            <li class="grids__item">
+                <div class="grids__overlay">
+
+                <picture class="grids__img">
+                    <source srcset="img/tag-desktop.png 1x, img/tag-desktop@2.png 2x" media="(min-width:1024px)">
+                    <source srcset="img/tag-tablet.png 1x, img/tag-tablet@2.png 2x" media="(min-width:768px)">
+                    <img srcset="img/tag.png 1x, img/tag@2.png 2x" alt="tag">
+                </picture>
+                
+                <div class="grids__wrapper-text">
+                    <p class="grids__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                </div>
+
+                </div>
+
+                <h3 class="grids__title">Проєкт LAB</h3>
+                <p class="grids__subtitle">Маркетинг</p>
+            </li>
+            <li class="grids__item">
+                
+                <div class="grids__overlay">
+
+                <picture class="grids__img">
+                    <source srcset="img/business-desktop.png 1x, img/business-desktop@2.png 2x" media="(min-width:1024px)">
+                    <source srcset="img/business-tablet.png 1x, img/business-tablet@2.png 2x" media="(min-width:768px)">
+                    <img srcset="img/business.png 1x, img/business@2.png 2x" alt="business">
+                </picture>
+
+                <div class="grids__wrapper-text">
+                    <p class="grids__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                </div>
+
+                </div>
+
+                <h3 class="grids__title">Growing Business</h3>
+                <p class="grids__subtitle">Додаток</p>
+            </li>
+        </ul>
+    </main>
+
+   <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+
+            <div class="footer__info">
+                <a href="#" class="footer__logo logo"><span class="logo__label">Web</span>Studio</a>
+
+                <span class="footer__address">м. Київ, пр-т Лесі Українки, 26</span>
+                <span class="footer__email">info@devstudio.com</span>
+                <span class="footer__tel">+38 096 111 11 11</span>
+            </div>
+
+        <div class="footer__socials">
+            <h3 class="footer__socials-title">приєднуйтесь</h3>
+        <div class="footer__socials-content">
+            <div class="footer__socials-item"><svg class="footer__socials-svg" width="20" height="20"><use href="symbols.svg#instagram"></use></svg></div>
+            <div class="footer__socials-item"><svg class="footer__socials-svg" width="20" height="20"><use href="symbols.svg#twitter"></use></svg></div>
+            <div class="footer__socials-item"><svg class="footer__socials-svg" width="20" height="20"><use href="symbols.svg#facebook"></use></svg></div>
+            <div class="footer__socials-item"><svg class="footer__socials-svg" width="20" height="20"><use href="symbols.svg#in"></use></svg></div>    
+        </div>
+        </div>
+
+        <div class="footer__mailing">
+            <h3 class="footer__mailing-title">Підпишіться на розсилку</h3>
+            <div class="footer__mailing-content">
+                <input class="footer__mailing-input" type="email" placeholder="E-mail">
+                <button class="footer__mailing-btn">Підписатися
+                    <svg class="footer__mailing-svg" width="24" height="24">
+                        <use href="symbols.svg#send"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    </div>
+    </footer>
+    </div>
+
+   <div  class="menu-overlay menu" id="menuOverlay">
+
+        <div class="menu__wrapper"> 
+
+        <button class="menu__btn" onclick="closeMenu()">
+            <svg class="menu__svg"  width="19" height="19">
+                <use href="symbols.svg#close-menu"></use>
+            </svg>
+        </button>
+
+        <ul class="menu__list">
+            <li class="menu__item"><a class="menu__link" href="index.html">Студія</a></li>
+            <li class="menu__item"><a class="menu__link menu__active" href="#">Портфоліо</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Контакти</a></li>
+        </ul>  
+
+        </div>
+
+        <div class="menu__wrapper">
+
+        <div class="menu__info">
+            <p class="menu__tel">+38 096 111 11 11</p>
+            <p class="menu__email">info@devstudio.com</p>
+        </div>
+
+
+        <ul class="menu__socials-list">
+            <li class="menu__socials-item"><a href="#" class="menu__socials-link">Instagram</a></li>
+            <li class="menu__socials-item"><a href="#" class="menu__socials-link">Twitter</a></li>
+            <li class="menu__socials-item"><a href="#" class="menu__socials-link">Facebook</a></li>
+            <li class="menu__socials-item"><a href="#" class="menu__socials-link">LinkedIn</a></li>
+        </ul>
+
+        </div>
+
+    </div>
+
+    <script src="portfolio.js"></script>
+</body>
+</html>
